@@ -1,6 +1,6 @@
 <?php
-    $dsn = 'mysql:dbname=sample_db;host=localhost;';
-    $user = 'otsubo';
+    $dsn = 'mysql:dbname=test_DB;host=localhost;';
+    $user = 'ryosei';
     $password = 'morijyobi';
     try {
         $dbh = new PDO($dsn, $user, $password);
@@ -67,9 +67,9 @@
                     <tbody>
                         <?php foreach($result as $value) { ?>
                             <tr>
-                                <th><?php echo 'value[id]'; ?></th>
-                                <td><?php echo 'value[name]'; ?></td>
-                                <td><?php echo 'value[age]'; ?></td>
+                                <th><?php echo "value[id]"; ?></th>
+                                <td><?php echo "value[name]"; ?></td>
+                                <td><?php echo "value[age]"; ?></td>
                             </tr>
                         <?php } ?>
                     </tbody>
